@@ -1,0 +1,29 @@
+.res-filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.res-overall {
+  font-size: 14px;
+  color: var(--slate);
+  margin-left: auto;
+}
+.pct-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  min-width: 100px;
+}
+.pct-bar {
+  height: 6px;
+  border-radius: 3px;
+  transition: width .3s;
+}
+.grade-badge {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+}

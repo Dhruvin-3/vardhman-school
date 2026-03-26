@@ -1,0 +1,33 @@
+.notice-textarea { resize: vertical; min-height: 100px; }
+
+.notices-list { display: flex; flex-direction: column; gap: 14px; }
+
+.notice-card {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+  animation: fadeUp .35s ease both;
+  transition: box-shadow .18s, border-color .18s;
+}
+.notice-card:hover {
+  border-color: var(--gold);
+  box-shadow: var(--shadow-sm);
+}
+
+.notice-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.notice-content  { flex: 1; }
+.notice-header   { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+.notice-title    { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--navy); }
+.notice-meta     { display: flex; align-items: center; gap: 8px; }
+.notice-body     { font-size: 14px; color: var(--slate); line-height: 1.65; }
+.notice-del      { padding: 5px 12px; font-size: 12px; }

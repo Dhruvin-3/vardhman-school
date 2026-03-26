@@ -1,0 +1,25 @@
+.fee-summary-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.fee-summary-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-left: 4px solid transparent;
+  animation: fadeUp .35s ease both;
+}
+.fee-summary-card--green { border-left-color: var(--green); }
+.fee-summary-card--red   { border-left-color: var(--red); }
+.fee-summary-card--blue  { border-left-color: var(--blue); }
+.fee-sum-icon { font-size: 28px; }
+.fee-sum-val  { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--navy); }
+.fee-sum-label{ font-size: 11px; color: var(--slate); font-weight: 600; letter-spacing: .5px; text-transform: uppercase; margin-top: 3px; }
+
+.fee-filters { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }

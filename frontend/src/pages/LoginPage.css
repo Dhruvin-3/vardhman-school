@@ -1,0 +1,114 @@
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, var(--navy-lt) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.login-bg-circle--1 {
+  top: -130px; right: -130px;
+  width: 500px; height: 500px;
+  border: 60px solid rgba(201,168,76,.07);
+}
+.login-bg-circle--2 {
+  bottom: -90px; left: -90px;
+  width: 340px; height: 340px;
+  border: 40px solid rgba(201,168,76,.05);
+}
+
+.login-card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 48px 44px;
+  width: 100%;
+  max-width: 430px;
+  box-shadow: 0 32px 80px rgba(0,0,0,.28);
+  position: relative;
+  z-index: 1;
+}
+
+/* Emblem */
+.login-emblem { text-align: center; margin-bottom: 32px; }
+.login-emblem-icon {
+  width: 74px; height: 74px;
+  background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 32px;
+  box-shadow: 0 8px 24px rgba(15,39,68,.22);
+}
+.login-emblem h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--navy);
+}
+.login-emblem p {
+  font-size: 12px;
+  color: var(--slate);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+/* Role tabs */
+.role-tabs {
+  display: flex;
+  background: var(--cream);
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 28px;
+}
+.role-tab {
+  flex: 1;
+  padding: 9px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--slate);
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .2s;
+}
+.role-tab--active {
+  background: var(--navy);
+  color: var(--white);
+  box-shadow: 0 2px 8px rgba(15,39,68,.22);
+}
+
+/* Login button */
+.login-btn { width: 100%; padding: 13px; font-size: 15px; margin-top: 6px; }
+
+/* Hint */
+.hint-box {
+  margin-top: 22px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 12px;
+  color: #3b6fb5;
+  line-height: 1.8;
+}
+.hint-box strong { display: block; margin-bottom: 3px; color: var(--navy-mid); }
+.hint-autofill {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.hint-autofill:hover { color: var(--navy); }
+
+@media (max-width: 480px) {
+  .login-card { padding: 36px 24px; }
+}
