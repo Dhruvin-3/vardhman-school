@@ -5,7 +5,7 @@ Demo-ready, clean UI, role-based access for Admin and Students.
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Structure 
 
 ```
 vardhman-school-v2/
